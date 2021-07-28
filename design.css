@@ -1,0 +1,187 @@
+body {
+    background: #353535;
+    background-image: linear-gradient(to right, #212121, #353535, #212121);
+}
+header {
+    color: #353535;
+    background-color: #e96b49;
+    padding: 20px 0;
+    text-align: center;
+    border-radius: 10px;
+    border: 4px solid black;
+    box-shadow: 4px 4px 4px black;
+    background-image: linear-gradient(to right, #f36f40, #fcb049, #f36f40);
+    transition: all 0.5s;
+}
+header:hover {
+    padding : 40px;
+    transition: all 0.5s;
+}
+section {
+    padding: 40px 0;
+    text-align: center;
+}
+.features {
+    background: #FFFFFF;
+    color: #000000;
+}
+.quote {
+    background: #a67ff5;
+    color: white;
+    border-radius: 10px;
+    border: 4px solid black;
+    font-weight: 700;
+    padding: 40px 0;
+    margin: 10px 0;
+    text-shadow: 1px 1px 1px black;
+    box-shadow: 4px 4px 4px black;
+    background-image: linear-gradient(to right, #7d6fe4, #a980f8, #7d6fe4);
+    transition: all 0.5s;
+}
+.quote:hover {
+    padding: 60px 0;
+    transition: all 0.5s;
+}
+footer {
+    background: #353535;
+    padding: 32px 0;
+    text-align: center;
+    color: #868686;
+    font-size: 14px;
+    border-radius: 10px;
+    border: none;
+    text-shadow: 1px 1px 1px black;
+    background-image: linear-gradient(to right, #212121, #353535, #212121);
+}
+footer ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+footer li {
+    display: inline-block;
+}
+footer li a {
+    padding: 6px;
+    font-size: 16 px;
+    text-decoration: none;
+    color: #c3c3c3;
+    text-shadow: 1px 1px 1px black;
+}
+footer li a:hover {
+    color:white;
+}
+h1 {
+    font-size: 48px;
+    margin: 0 0 16px 0;
+    font-weight: 900;
+    filter: drop-shadow(2px 2px 2px black);
+    background: #FF7700;
+    background: -webkit-linear-gradient(to right, #f37040 51.7%, #40c0f3 55%);
+    background: -moz-linear-gradient(to right, #f37040 51.7%, #40c0f3 55%);
+    background: linear-gradient(to right, #f37040 51.7%, #40c0f3 55%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+h2 {
+    font-weight: 700;
+    font-size: 20px;
+    margin: 0 0 16px 0;
+    text-shadow: 1px 1px 1px black;
+    color: white;
+}
+.container {
+    margin: 0 auto;
+    padding: 0 20px 0 20px;
+    max-width: 900px;
+}
+.btn {
+    display: inline-block;
+    color: white;
+    font-weight: 700;
+    font-size: 20px;
+    background: #a67ff5;
+    border: 2px solid #353535;
+    border-radius: 5px;
+    padding: 12px 16px;
+    cursor: pointer;
+    background-image: linear-gradient(to right, #7d6fe4, #a980f8, #7d6fe4);
+    animation: opacityswitch 1.5s linear infinite;
+    text-shadow: 1px 1px 1px black;
+    box-shadow: 2px 2px 2px black;
+    transition: all 0.5s;
+}
+@keyframes opacityswitch {
+    0% {opacity: 0.5}
+    10% {opacity: 0.6}
+    20% {opacity: 0.7}
+    30% {opacity: 0.8}
+    40% {opacity: 0.9}
+    50% {opacity: 1}
+    60% {opacity: 0.9}
+    70% {opacity: 0.8}
+    80% {opacity: 0.7}
+    90% {opacity: 0.6}
+    100% {opacity: 0.5}
+}
+@keyframes opacitystable {
+    0% {opacity: 1}
+    100% {opacity: 1}
+}
+.btn:hover {
+    background: #454996;
+    animation-play-state: paused;
+    animation: opacitystable 1s step-end infinite;
+    opacity: 1;
+    border: 3px solid #353535;
+    padding: 18px 24px;
+    font-size: 30px;
+    text-shadow: 1.5px 1.5px 1.5px black;
+    transition: all 0.5s;
+}
+.feature {
+    width: 45%;
+    display: inline-block;
+    font-size: 16px;
+    margin: 0 5px;
+    color: #FFFFFF;
+    text-shadow: 1px 1px 1px black;
+}
+.feature img {
+    width: 50%;
+    border-radius: 10px;
+    opacity: 0.8;
+    transition: all 0.5s;
+}
+.feature img:hover {
+    width: 60%;
+    opacity: 1;
+    transition: all 0.5s;
+}
+blockquote {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+blockquote p {
+    margin: 0 0 5px 0;
+    font-size: 24px;
+}
+blockquote cite {
+    font-size: 16px;
+    font-style: italic;
+    text-shadow: 0.75px 0.75px 0.75px black;
+}
+blockquote cite:before {
+    content: '-';
+    margin-right: 5px;
+}
+header img {
+    width: 50px;
+    height: 50px;
+    display: block;
+    border-radius: 5px;
+    margin: auto auto;
+    padding: 0 0;
+}
