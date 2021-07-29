@@ -156,6 +156,7 @@ h2 {
 }
 .feature img:hover {
     width: 60%;
+    min-width: 120px;
     opacity: 1;
     transition: all 0.5s;
 }
