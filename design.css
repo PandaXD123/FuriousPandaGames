@@ -218,6 +218,11 @@ header img {
         min-width: 100px;
         margin-right: 20px;
     }
+    {
+    .feature img:hover {
+     width: 60%;
+     min-width: 120px;
+    } 
     .quote {
         padding: 30px 0;
     }
