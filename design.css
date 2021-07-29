@@ -204,7 +204,6 @@ header img {
 .social img {
     width: 70%;
     max-width: 40px;
-    border-radius: 10px;
     opacity: 0.9;
     transition: all 0.5s;
 }
