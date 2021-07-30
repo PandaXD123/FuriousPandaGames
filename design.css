@@ -1,6 +1,8 @@
 body {
     background: #353535;
     background-image: linear-gradient(to right, #212121, #353535, #212121);
+    font-family: Verdana, Helvetica, sans-serif;
+    transition: all 0.5s;
 }
 header {
     color: #353535;
@@ -30,7 +32,7 @@ section {
     color: white;
     border-radius: 10px;
     border: 4px solid black;
-    font-weight: 700;
+    font-weight: 500;
     padding: 40px 0;
     margin: 10px 0;
     text-shadow: 1px 1px 1px black;
@@ -84,17 +86,17 @@ h1 {
     font-size: 48px;
     margin: 0 0 16px 0;
     font-weight: 900;
-    filter: drop-shadow(2px 2px 2px black);
+    filter: drop-shadow(3px 3px 3px black);
     background: #FF7700;
-    background: -webkit-linear-gradient(to right, #f37040 51.7%, #40c0f3 55%);
-    background: -moz-linear-gradient(to right, #f37040 51.7%, #40c0f3 55%);
-    background: linear-gradient(to right, #f37040 51.7%, #40c0f3 55%);
+    background: -webkit-linear-gradient(to right, #f57802 45%, #00acf4 60%);
+    background: -moz-linear-gradient(to right, #f57802 45%, #00acf4 60%);
+    background: linear-gradient(to right, #f57802 45%, #00acf4 60%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 h2 {
-    font-weight: 700;
+    font-weight: 550;
     font-size: 20px;
     margin: 0 0 16px 0;
     text-shadow: 1px 1px 1px black;
@@ -144,8 +146,8 @@ h2 {
     animation: opacitystable 1s step-end infinite;
     opacity: 1;
     border: 3px solid #353535;
-    padding: 18px 24px;
-    font-size: 30px;
+    padding: 12px*1.25 16*1.25px;
+    font-size: 25px;
     text-shadow: 1.5px 1.5px 1.5px black;
     transition: all 0.5s;
 }
@@ -156,6 +158,7 @@ h2 {
     margin: 0 5px;
     color: #FFFFFF;
     text-shadow: 1px 1px 1px black;
+    transition: all 0.5s;
 }
 .feature img {
     width: 50%;
@@ -216,7 +219,7 @@ header img {
     width: 90%;
     max-width: 50px;
     opacity: 1;
-    filter: brightness(1.5);
+    filter: brightness(1.25);
     transition: all 0.5s;
 }
 @media screen and (max-width: 480px)
