@@ -222,6 +222,33 @@ header img {
     filter: brightness(1.25);
     transition: all 0.5s;
 }
+.submenu {
+    left:50%;
+    transform: translate(-50%, 0);
+    text-align: center;
+    position: relative;
+    width: 160px;
+    background-image: linear-gradient(to right, #7d6fe4, #a980f8, #7d6fe4);
+    min-width: 160px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px black;
+    border: 2px solid #353535;
+    font-weight: 550;
+    display:none;
+}
+.submenu a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-shadow: 1px 1px 1px black;
+    transition: all 0.5s;
+}
+.submenu a:hover {
+    background-color: #454996;
+    font-size:18px;
+    transition: all 0.5s;
+}
 @media screen and (max-width: 480px)
 {
     .btn {
@@ -277,5 +304,8 @@ header img {
     footer li {
         display: inline-block;
         margin: 0 0 20px 0;
+    }
+    .submenu {
+        width: 100%;
     }
 }
