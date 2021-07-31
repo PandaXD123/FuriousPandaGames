@@ -4,7 +4,16 @@ body {
     font-family: Verdana, Helvetica, sans-serif;
     transition: all 0.5s;
 }
+/*
+.darkmodeBody {
+    background-image: linear-gradient(to right, #ebebeb, #d8d8d8, #ebebeb);
+}
+.darkmodeText {
+    color: black;
+}
+*/
 header {
+    top: 100px;
     color: #353535;
     background-color: #e96b49;
     padding: 20px 0;
@@ -54,6 +63,7 @@ footer {
     border: none;
     text-shadow: 1px 1px 1px black;
     background-image: linear-gradient(to right, #212121, #353535, #212121);
+    background: none;
 }
 footer ul {
     margin: 0;
@@ -79,8 +89,9 @@ footer li a {
 footer li a:hover {
     color:white;
     padding: 9px 15px;
-    transition: all 0.5s;
     border: 2px solid white;
+    transition: all 0.5s;
+    background: black;
 }
 h1 {
     font-size: 48px;
@@ -248,6 +259,54 @@ header img {
     background-color: #454996;
     font-size:18px;
     transition: all 0.5s;
+}
+#navbar {
+    background-color:#00acf4;
+    padding: 5px 0;
+    text-align: center;
+    color: #868686;
+    font-size: 16px;
+    border-radius: 10px;
+    border: 2px solid #000000;
+    text-shadow: 1px 1px 1px black;
+    background-image: linear-gradient(to right, #212121, #353535, #212121);
+    width: auto;
+    left: 5px;
+    right: 5px;
+    top: 0;
+    margin: 0 0 10px 0;
+    box-shadow: 5px 5px 10px black;
+    position: fixed;
+    z-index: 100;
+}
+#navbar ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+#navbar li {
+    display: inline-block;
+    padding: 0 5%;
+    transition: all 0.5s;
+}
+#navbar li a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 0px;
+    border-radius: 10px;
+    border: none;
+    transition: all 0.5s;
+    vertical-align: center;
+}
+#navbar li a:hover {
+    padding: 5px 20px;
+    border-radius: 5px;
+    border: 2px solid white;
+    background-color: black;
+    transition: all 0.5s;
+}
+.topspacing {
+    height: 30px;
 }
 @media screen and (max-width: 480px)
 {
