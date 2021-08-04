@@ -1,4 +1,5 @@
 var isclicked = false;
+var isclicked2 = false;
 
 $(function() {
     $(".btn").click(function(e) {
@@ -24,6 +25,34 @@ $(function() {
             {
                 $(".submenu").slideUp(500);
                 isclicked = false;
+            }
+    });
+});
+
+$(function() {
+    $(".menubtn").click(function(e) {
+        e.preventDefault();
+        $(".nav-submenu").stop(500).slideToggle();
+        if (isclicked2 == false)
+        {
+            $(".nav-submenu").slideDown(500);
+            isclicked2 = true;
+        }
+        else
+        {
+            $(".nav-submenu").slideUp(500);
+            isclicked2 = false;
+        }
+    });
+});
+   
+$(function() {
+    $(document).click(function(e) {
+        if (!$(e.target).hasClass('submenubtn') && !$(e.target).hasClass('menubtn') && !$(e.target).hasClass('nav-submenu') || $(e.target).hasClass('closemenubtn'))
+            if(isclicked2 == true)
+            {
+                $(".nav-submenu").slideUp(500);
+                isclicked2 = false;
             }
     });
 });
