@@ -1,6 +1,9 @@
+//Variables that verify if the menus are open or closed.
 var isclicked = false;
 var isclicked2 = false;
 
+//Slide down and slide up functions for the download button.
+//click function for the button element
 $(function() {
     $(".btn").click(function(e) {
         e.preventDefault();
@@ -17,7 +20,7 @@ $(function() {
         }
     });
 });
-   
+//function activates if any other element on the page is clicked, other than the button
 $(function() {
     $(document).click(function(e) {
         if (!$(e.target).hasClass('btn'))
@@ -29,6 +32,8 @@ $(function() {
     });
 });
 
+//Slide down and slide up functions for the menu button.
+//click function for the button element
 $(function() {
     $(".menubtn").click(function(e) {
         e.preventDefault();
@@ -45,7 +50,7 @@ $(function() {
         }
     });
 });
-   
+//function activates if any other element on the page is clicked, other than the button
 $(function() {
     $(document).click(function(e) {
         if (!$(e.target).hasClass('submenubtn') && !$(e.target).hasClass('menubtn') && !$(e.target).hasClass('nav-submenu') || $(e.target).hasClass('closemenubtn'))
@@ -56,6 +61,47 @@ $(function() {
             }
     });
 });
+
+// === Functions for slideshow ===
+
+var slideIndex = 1;
+// Show first image when the page loads
+
+setInterval(plusSlidesAuto, 5000);
+
+document.addEventListener("DOMContentLoaded", function() {
+    currentSlide(1);
+});
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function plusSlidesAuto() {
+    showSlides(slideIndex += 1);
+  }
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
 
 /*
 var darkmode= true;
