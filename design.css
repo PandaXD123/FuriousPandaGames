@@ -78,7 +78,7 @@ footer li {
 }
 footer li a {
     padding: 6px 10px;
-    font-size: 16 px;
+    font-size: 16px;
     text-decoration: none;
     color: #c3c3c3;
     text-shadow: 1px 1px 1px black;
@@ -474,6 +474,40 @@ header img {
     to {opacity: 1}
 }
 
+#unityContainer {
+    width: 75vw; 
+    height: 42vw; 
+    display: inline-block;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0 20px 0 20px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.fullscreenbutton {
+    padding: 6px 10px;
+    font-size: 16px;
+    text-decoration: none;
+    color: #c3c3c3;
+    text-shadow: 1px 1px 1px black;
+    box-shadow: 2px 2px 2px black;
+    border: 2px solid #868686;
+    border-radius: 10px;
+    display: inline-block;
+    transition: all 0.5s;
+}
+
+.fullscreenbutton:hover {
+    color: white;
+    padding: 9px 15px;
+    border: 2px solid white;
+    transition: all 0.5s;
+    cursor: pointer;
+    background: black;
+}
+
 /*=== Style changes for mobile screens that have a maximum width of 480px ===*/
 @media screen and (max-width: 480px)
 {
@@ -536,5 +570,9 @@ header img {
     }
     .nav-submenu {
         width: 100%;
+    }
+    #unityContainer {
+        width: 90vw;
+        height: 51vw;
     }
 }

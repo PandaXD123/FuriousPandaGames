@@ -14,6 +14,12 @@
         <meta property="og:image" content="logo-lowres-cubeball.png">
         <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
         <script type="text/javascript" src="script.js"></script>
+        <link rel="stylesheet" href="TemplateData/style.css">
+        <script src="TemplateData/UnityProgress.js"></script>
+        <script src="Build/UnityLoader.js"></script>
+        <script>
+          var unityInstance = UnityLoader.instantiate("unityContainer", "Build/Web build.json", {onProgress: UnityProgress});
+        </script>
     </head>
 
     <body>
@@ -57,6 +63,14 @@
                 </div>
             </div>
         </header>
+
+        <!--Unity WebGL game build container-->
+        <section>
+            <div id="unityContainer"></div>
+            <div class="footer">
+                <p class="fullscreenbutton" onclick="unityInstance.SetFullscreen(1)"> Go fullscreen </p>
+            </div>
+        </section>
 
         <!--Features container-->
         <section>
