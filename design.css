@@ -508,7 +508,7 @@ header img {
     background: black;
 }
 
-p .gametitle {
+.gametitle {
     font-weight: 500;
     font-size: 36px;
     margin: 0 0 16px 0;
@@ -583,7 +583,7 @@ p .gametitle {
         width: 90vw;
         height: 51vw;
     }
-    p .gametitle {
+    .gametitle {
         font-weight: 350;
         font-size: 26px;
         margin: 0 0 16px 0;
