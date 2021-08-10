@@ -474,7 +474,7 @@ header img {
     to {opacity: 1}
 }
 
-#unityContainer {
+#unity-container {
     width: 75vw; 
     height: 42vw; 
     display: inline-block;
@@ -571,7 +571,7 @@ header img {
     .nav-submenu {
         width: 100%;
     }
-    #unityContainer {
+    #unity-container {
         width: 90vw;
         height: 51vw;
     }
