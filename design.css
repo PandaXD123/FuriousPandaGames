@@ -508,6 +508,14 @@ header img {
     background: black;
 }
 
+p .gametitle {
+    font-weight: 500;
+    font-size: 36px;
+    margin: 0 0 16px 0;
+    text-shadow: 1px 1px 1px black;
+    color: #f2f2f2;
+}
+
 /*=== Style changes for mobile screens that have a maximum width of 480px ===*/
 @media screen and (max-width: 480px)
 {
@@ -574,5 +582,12 @@ header img {
     #unity-container {
         width: 90vw;
         height: 51vw;
+    }
+    p .gametitle {
+        font-weight: 350;
+        font-size: 26px;
+        margin: 0 0 16px 0;
+        text-shadow: 1px 1px 1px black;
+        color: #f2f2f2;
     }
 }
